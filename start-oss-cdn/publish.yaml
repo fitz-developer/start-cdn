@@ -3,16 +3,16 @@ Name: start-oss-cdn
 Provider:
   - 阿里云
 Version: 0.0.1
-Description: API 网关
+Description: OSS 回源到CDN
 HomePage: https://github.com/devsapp/start-cdn
 Tags:
   - Web应用
   - CDN
 Category: Web框架
-Service: # 使用的服务
-  Serverless 应用引擎:
-    Authorities: #权限描述
-      - AliyunCDNFullAccess
+# Service: # 使用的服务
+#   Serverless 应用引擎:
+#     Authorities: #权限描述
+#       - AliyunCDNFullAccess
 Parameters:
   type: object
   additionalProperties: false # 不允许增加其他属性
