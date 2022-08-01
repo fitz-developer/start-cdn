@@ -52,22 +52,28 @@ Parameters:
         - ap-south-1
     bucket:
       title: OSS Bucket
+      description: OSS Bucket
       type: string
     codeUri:
-      title: 本地需要上传的文件
+      title: 本地需要上传的文件目录路径
+      description: 要上传的目标文件的路径路径，如Vue项目的dist
       type: string
     indexPage:
       title: 默认首页
+      description: 网站默认首页html
       type: string
       default: index.html
     errorPage:
       title: 默认404页面
+      description: 当页面找不到时跳转到的页面
       type: string
       default: 404.html
     domainName:
       title: 加速域名
+      description: cdn加速域名，必填项
       type: string
     refreshAfterDeploy:
       title: 部署后自动刷新cdn
+      description: 部署完成后字段cdn的缓存，让cdn的缓存失效，下次访问直接访问源站
       type: boolean
       default: true
