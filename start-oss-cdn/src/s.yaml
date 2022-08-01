@@ -38,8 +38,8 @@ services:
       cdnType: web
       domainName: ${vars.domainName}
       sources: # 回源地址列表（必填项）
-        - type: oss # 源站类型（必填项），可选值：ipaddr IP源站、domain 域名源站、oss OSS Bucket为源站、fc_domain 函数计算为源站
-          content: ${vars.bucket}.oss-${vars.region}.aliyuncs.com # 回源地址（必填项）
+          - type: oss # 源站类型（必填项），可选值：ipaddr IP源站、domain 域名源站、oss OSS Bucket为源站、fc_domain 函数计算为源站
+            content: ${vars.bucket}.oss-${vars.region}.aliyuncs.com # 回源地址（必填项）
       refreshConfig:
         objectPaths:
           - http://${vars.domainName}/
